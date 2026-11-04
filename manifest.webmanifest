@@ -1,0 +1,10 @@
+{
+  "name": "WakeUp",
+  "short_name": "WakeUp",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#08182b",
+  "theme_color": "#08182b",
+  "lang": "es",
+  "description": "Wake up. No excuses."
+}
