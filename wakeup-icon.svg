@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs>
+ <linearGradient id="o" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffbd62"/><stop offset=".48" stop-color="#ff8a24"/><stop offset="1" stop-color="#e95b08"/></linearGradient>
+ <radialGradient id="bg"><stop stop-color="#24170f"/><stop offset="1" stop-color="#080909"/></radialGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="512" height="512" rx="112" fill="url(#bg)"/>
+<path d="M220 90a160 160 0 0 0 0 300 176 176 0 1 1 0-300Z" fill="url(#o)" filter="url(#glow)"/>
+<g fill="url(#o)" stroke="#6e2c0a" stroke-width="8" stroke-linejoin="round">
+ <path d="M177 170l-23-31 42 5 18 25M335 170l18-26 42-5-22 31"/>
+ <path d="M166 207a90 90 0 0 1 180 0v20H166Z"/>
+ <circle cx="256" cy="265" r="105"/>
+</g>
+<circle cx="256" cy="265" r="81" fill="#fff5e8" stroke="#17110d" stroke-width="12"/>
+<g stroke="#17110d" stroke-width="12" stroke-linecap="round"><path d="M256 204v15M256 265l-39-35M256 265l46-48"/></g>
+<circle cx="256" cy="265" r="10" fill="#17110d"/>
+<path d="M113 371q54-81 143-65 91-16 143 65l-22 59H136Z" fill="url(#o)" stroke="#6e2c0a" stroke-width="9"/>
+<path d="M133 378q123-56 246 0" fill="none" stroke="#ffd18c" stroke-width="9" stroke-linecap="round"/>
+<g fill="url(#o)" font-family="Arial,sans-serif" font-weight="900" font-style="italic"><text x="351" y="118" font-size="50">Z</text><text x="386" y="86" font-size="42">Z</text><text x="417" y="56" font-size="34">Z</text></g>
+</svg>
