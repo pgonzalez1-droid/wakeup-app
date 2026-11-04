@@ -1,4 +1,4 @@
-const CACHE='wakeup-v19-cache';
+const CACHE='wakeup-v20-cache';
 const APP_FILES=['./index.html','./manifest.webmanifest','./wakeup-icon.svg'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);await Promise.all(APP_FILES.map(async path=>{try{const response=await fetch(new Request(path,{cache:'reload'}));if(response.ok)await cache.put(path,response)}catch(error){}}));await self.skipWaiting()})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(key=>key.startsWith('wakeup-')&&key!==CACHE).map(key=>caches.delete(key)));await self.clients.claim()})()));
