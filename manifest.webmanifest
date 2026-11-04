@@ -1,1 +1,1 @@
-{"name":"WakeUp","short_name":"WakeUp","start_url":"./","scope":"./","display":"standalone","background_color":"#11100f","theme_color":"#171310","icons":[{"src":"wakeup-icon.jpg?v=13","sizes":"180x180","type":"image/jpeg","purpose":"any"}]}
+{"name":"WakeUp","short_name":"WakeUp","start_url":"./","scope":"./","display":"standalone","background_color":"#080909","theme_color":"#17110d","icons":[{"src":"wakeup-icon.svg?v=14","sizes":"any","type":"image/svg+xml","purpose":"any"}]}
