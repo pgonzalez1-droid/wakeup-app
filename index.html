@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#07172a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="WakeUp">
+<meta name="theme-color" content="#171310"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="WakeUp">
 <link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon.png">
 <title>WakeUp · WAKE UP. NO EXCUSES.</title>
 <style>
@@ -18,6 +18,47 @@ h1{font-size:29px;letter-spacing:-1px;margin:8px 0 5px}h2{font-size:19px;margin:
 .nav{position:fixed;z-index:5;bottom:0;left:0;right:0;padding:11px max(14px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom));background:#07192bea;backdrop-filter:blur(18px);border-top:1px solid #244663;display:flex;justify-content:space-around}.nav button{border:0;background:none;color:#8da9c0;font-size:11px;display:grid;gap:4px;justify-items:center}.nav button b{font-size:22px}.nav button.active{color:#68d5ff}
 .back{background:none;border:0;color:#77d9ff;padding:5px 0 15px;font-size:16px}.field{display:grid;gap:7px;margin:14px 0;min-width:0}.field label{font-size:13px;color:#b9cfe1}.field input,.field select{width:100%;min-height:53px;border:1px solid #37617e;border-radius:16px;background:#091f34;color:white;padding:12px 14px;font-size:17px;min-width:0}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid #37617e;background:#0b2239;color:#c8dbea;border-radius:30px;padding:10px 13px;font-size:13px}.chip.selected{border-color:#50caff;background:#174d70;color:#fff;box-shadow:0 0 0 1px #50caff55}.option{display:flex;align-items:center;gap:11px;padding:12px;border:1px solid #2c5472;border-radius:15px;background:#0b2239;margin:8px 0}.option input{accent-color:#39baff;width:18px;height:18px}.range{width:100%;accent-color:#42bdff}.hint{font-size:12px;color:#9eb6cc;line-height:1.5}.danger{color:#ff9d9d}.soundrow{display:flex;align-items:center;gap:10px}.play{width:42px;height:42px;flex:0 0 42px;border-radius:50%;border:1px solid #4382a9;background:#17466b;color:#fff;font-size:17px}.toast{position:fixed;z-index:30;bottom:95px;left:50%;transform:translateX(-50%);background:#e7f7ff;color:#082037;padding:11px 16px;border-radius:20px;font-size:13px;font-weight:750;box-shadow:0 5px 20px #0006;display:none;max-width:90%;text-align:center}.stat{font-size:27px;font-weight:900}.logoBig{width:78px;height:78px;border-radius:22px}.game-choice{width:100%;padding:14px;border:1px solid #386a8c;border-radius:15px;background:#102f4b;color:white;text-align:left;margin:6px 0;font-weight:750}.game-choice:active{background:#1b5680}.game-input{width:100%;padding:15px;border:1px solid #386a8c;border-radius:15px;background:#081e33;color:white;font-size:20px;margin:10px 0}.game-progress{height:7px;border-radius:10px;background:#28445e;overflow:hidden;margin:12px 0}.game-progress span{display:block;height:100%;background:linear-gradient(90deg,#39adff,#70dcff)}.big-emoji{font-size:55px;text-align:center;margin:18px}.memory-pad{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.memory-pad button{height:88px;border:0;border-radius:18px;font-size:32px}.draw-board{width:100%;height:280px;display:block;background:#f7fbff;border:2px solid #58bfff;border-radius:16px;touch-action:none}.draw-tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.draw-tools button{border:1px solid #37617e;background:#0b2239;color:white;border-radius:12px;padding:9px 12px}.draw-tools input{width:44px;height:38px;padding:2px}
 @media(max-width:380px){main{padding-left:13px;padding-right:13px}.two{grid-template-columns:1fr}.time{font-size:51px}.challenge-card{grid-template-columns:50px minmax(0,1fr) 46px;padding:12px;gap:9px}.challenge-card .tileico{width:50px;height:50px;flex-basis:50px}.grid{gap:8px}}
+
+/* WakeUp refresh: charcoal + warm orange */
+:root{color-scheme:dark;--bg:#11100f;--panel:#211c19;--panel2:#2a211c;--line:#49352a;--blue:#ff8a32;--cyan:#ffc078;--txt:#fff8f1;--muted:#b9aaa0;--green:#ffb15c;--shadow:0 16px 38px #0008}
+html,body{background:#11100f}
+body{background:radial-gradient(ellipse at 50% -12%,#653516 0,transparent 46%),linear-gradient(180deg,#191411,#100f0e 72%);color:#fff8f1}
+header{padding-bottom:20px}
+.brand{gap:11px;letter-spacing:-.8px}
+.brand span{color:#ff963f}
+.brand img,.brand-mark{width:46px;height:46px;border-radius:15px;flex:0 0 46px;filter:drop-shadow(0 5px 12px #ff7a2633)}
+.round{border:1px solid #80502f;background:linear-gradient(145deg,#ff9a43,#d85d19);color:#21130c;box-shadow:0 5px 16px #ff7b2630}
+h1{letter-spacing:-1.15px}
+.hero{border:1px solid #8b4b25;background:linear-gradient(145deg,#512a17,#2b1c15 72%);box-shadow:0 18px 42px #0006}
+.eyebrow{color:#ffc58e}
+.time{color:#fff7ed}
+.btn{background:linear-gradient(110deg,#ff8b32,#ffc078);color:#21130b;box-shadow:0 7px 18px #ff792522}
+.btn.secondary{background:#39261b;color:#ffe5ce;border:1px solid #704329;box-shadow:none}
+.btn.ghost{background:#211a16;color:#f4c7a4;border:1px solid #593b2a;box-shadow:none}
+.card,.challenge-card,.tile{border-color:#49352a;background:linear-gradient(145deg,#29211c,#1b1714);box-shadow:0 8px 20px #0003}
+.alarmico,.tileico{background:linear-gradient(145deg,#693719,#3d2518);color:#ffc078}
+.switch{background:#51443c}
+.switch.on{background:#f18432}
+.nav{background:#171310ed;border-top:1px solid #49352a}
+.nav button{color:#9e8d81}
+.nav button.active{color:#ffad68}
+.back{color:#ffad68}
+.field input,.field select,.game-input{border-color:#65432f;background:#171310;color:#fff8f1}
+.chip{border-color:#60422f;background:#211a16;color:#dfc9b9}
+.chip.selected{border-color:#ff9a4b;background:#573019;color:#fff5e9;box-shadow:0 0 0 1px #ff9a4b55}
+.option{border-color:#49352a;background:#211a16}
+.option input{accent-color:#ff913d}
+.play{border-color:#89512e;background:#512c19;color:#ffe8d4}
+.game-choice{border-color:#70452d;background:#2b2019;color:#fff5eb}
+.game-choice:active{background:#59321c}
+.game-progress{background:#49352a}
+.game-progress span{background:linear-gradient(90deg,#f47727,#ffc078)}
+.draw-board{border-color:#ff9a4b}
+.draw-tools button{border-color:#60422f;background:#211a16}
+.toast{background:#fff0df;color:#29170d}
+#ringOverlay{background:radial-gradient(ellipse at 50% 0%,#6a3518,#211610 55%,#11100f)!important}
+.logoBig{border:2px solid #ff9a4b;box-shadow:0 8px 26px #ff7a2633}
+@media(hover:hover){.btn:hover,.tile:hover,.challenge-card:hover{filter:brightness(1.09)}}
 </style></head><body><main id="app"></main>
 <nav class="nav"><button data-tab="home"><b>⌂</b>Inicio</button><button data-tab="alarms"><b>◷</b>Alarmas</button><button data-tab="challenges"><b>⚡</b>Retos</button><button data-tab="sounds"><b>♫</b>Sonidos</button><button data-tab="settings"><b>⚙</b>Ajustes</button></nav><div id="toast" class="toast"></div>
 <script>
@@ -41,7 +82,7 @@ function save(){localStorage.setItem(storeKey,JSON.stringify(data))}
 function toast(t){let e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toast.timer);toast.timer=setTimeout(()=>e.style.display='none',2400)}
 function go(p){page=p;render();window.scrollTo(0,0)}
 function cfg(id){if(!data.configs[id])data.configs[id]={options:[defs.find(x=>x.id===id).opts[0]],difficulty:'Fácil'};return data.configs[id]}
-function header(){return '<header><div class="brand"><img src="icon.png" alt="Logo WakeUp"><div>Wake<span>Up</span></div></div><button class="round" data-action="welcome">☀️</button></header>'}
+function header(){return '<header><div class="brand"><svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="Logo WakeUp"><defs><linearGradient id="wuGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc078"/><stop offset="1" stop-color="#ef7628"/></linearGradient></defs><rect x="3" y="3" width="58" height="58" rx="19" fill="#261811" stroke="#99552d" stroke-width="2"/><path d="M18 18 12 10M46 18l6-8" stroke="#ffb36e" stroke-width="5" stroke-linecap="round"/><path d="M17 28a15 15 0 0 1 30 0v13a15 15 0 0 1-30 0z" fill="url(#wuGlow)" stroke="#ffe0bd" stroke-width="2"/><path d="M23 36q4-5 8 0m3 0q4-5 8 0" fill="none" stroke="#442312" stroke-width="2.8" stroke-linecap="round"/><path d="M30 18q-7-7 1-11 0 7 7 5 5-1 6 5-7-3-14 1z" fill="#fff0dc" stroke="#a95426" stroke-width="1.5"/><path d="M44 10q5-5 8 0m-3 5q5-4 8 1" fill="none" stroke="#ffc078" stroke-width="2" stroke-linecap="round"/></svg><div>Wake<span>Up</span></div></div><button class="round" data-action="welcome">☀️</button></header>'}
 function challengeCard(d){let c=cfg(d.id),on=data.selected.includes(d.id);return '<div class="challenge-card"><div class="tileico">'+d.ico+'</div><div class="challenge-info" data-open-challenge="'+d.id+'"><strong>'+d.name+'</strong><small>'+d.desc+'</small><small style="margin-top:5px">'+c.difficulty+' · '+c.options.length+' modalidad(es)</small></div><div class="challenge-action"><button class="switch '+(on?'on':'')+'" data-select-challenge="'+d.id+'" aria-label="'+(on?'Desactivar':'Activar')+' '+d.name+'"></button></div></div>'}
 function home(){let next=data.alarms.filter(a=>a.enabled).sort((a,b)=>a.time.localeCompare(b.time))[0];return header()+'<h1>¡Buenos días! 👋</h1><div class="sub">Empieza el día con energía. Primero, despierta.</div><section class="hero"><div class="eyebrow">☀️ TU PRÓXIMA ALARMA</div><div class="time">'+(next?next.time:'07:30')+'</div><div class="sub">'+(next?(next.repeat==='Nunca'?'Una sola vez':next.repeat)+' · '+next.challenges.length+' retos':'Aún no has creado ninguna alarma')+'</div><div class="flex" style="margin-top:18px"><span class="chip">⚡ Despierta tu mente</span><button class="btn" data-action="newAlarm">＋ Nueva alarma</button></div></section><div class="section"><h2>Mis alarmas</h2><span class="muted">'+data.alarms.length+' alarmas</span></div>'+(data.alarms.map(alarmCard).join('')||'<div class="card empty">Todavía no tienes alarmas. Crea la primera con «Nueva alarma».</div>')+'<div class="section"><h2>Mis retos ⚡</h2><span class="muted">'+data.selected.length+' activos</span></div><div class="challenge-list">'+(defs.filter(d=>data.selected.includes(d.id)).map(challengeCard).join('')||'<div class="card empty">Todavía no has seleccionado retos.</div>')+'</div><div class="section"><h2>Accesos rápidos</h2></div><div class="grid"><button class="tile" data-action="objects"><div class="tileico">🧸</div><strong>Mis objetos</strong><small>'+data.objects.length+' objetos guardados</small></button><button class="tile" data-tab="stats"><div class="tileico">🔥</div><strong>Estadísticas</strong><small>Tu progreso</small></button></div>'}
 function alarmCard(a){return '<div class="card alarmrow"><div class="alarmico">⏰</div><div class="grow"><div class="alarmtime">'+a.time+'</div><div class="meta">'+a.repeat+' · '+a.challenges.length+' retos · '+a.sound+'</div></div><button class="switch '+(a.enabled?'on':'')+'" data-toggle-alarm="'+a.id+'"></button><button class="btn ghost" data-edit="'+a.id+'">✎</button></div>'}
